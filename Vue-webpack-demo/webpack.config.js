@@ -22,7 +22,9 @@ module.exports = {
         extensions: [".vue", ".js", ".ts"]
     },
     plugins: [
+        //webpack 热加载插件 我们修改文件页面会自动刷新
         new webpack.HotModuleReplacementPlugin(),
+        //VueLoader的插件
         new VueLoaderPlugin(),
         new htmlWebpackPlugin({
             filename: "index.html",
